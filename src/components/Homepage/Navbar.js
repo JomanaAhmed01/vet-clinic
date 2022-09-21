@@ -124,11 +124,13 @@ export const ProfileIcon = styled(PersonCircle)`
   height: 26px;
   color: #EC4A34;
   margin-right: 15px;
+  cursor: pointer;
 `
 
 export const Login = styled.p`
   color: #F56A56;
   font-size: 14px;
+  cursor: pointer;
 `
 
 export const MenuIcon = styled(Menu)`
@@ -139,6 +141,7 @@ export const MenuIcon = styled(Menu)`
     width: 50px;
     height: 50px;
     color: #000000;
+    cursor: pointer;
   }
 `
 
