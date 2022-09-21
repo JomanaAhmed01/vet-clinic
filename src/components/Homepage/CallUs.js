@@ -2,13 +2,13 @@ import React from 'react';
 import styled from "styled-components"
 
 function CallUs() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <PhoneNumber>CALL US: 123-456-7890</PhoneNumber>
-            </TextWrapper>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <PhoneNumber>CALL US: 123-456-7890</PhoneNumber>
+      </TextWrapper>
+    </Wrapper>
+  );
 }
 
 
