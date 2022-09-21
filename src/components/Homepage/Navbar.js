@@ -89,6 +89,7 @@ export const VetService = styled.p`
   color: #A0A0A0;
   font-size: 13px;
   margin-bottom: 4px;
+  margin-left: 6px;
 `
 
 export const ItemsWrapper = styled.div`
