@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
 import { Plus } from '@styled-icons/bootstrap/Plus'
+import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
+import { Menu } from '@styled-icons/entypo/Menu'
 
 function Navbar() {
     return (
@@ -16,13 +18,39 @@ function Navbar() {
                     <VetService>VET SERVICE</VetService>
                 </SecondRow>
             </LogoWrapper>
+
+            <ItemsWrapper>
+                <LinksWrapper>
+                  <Link>HOME</Link>
+                  <Link>OUR SERVICES</Link>
+                  <Link>ABOUT OUR CLINIC</Link>
+                  <Link>KEEP IN TOUCH</Link>
+                  <Link>BOOK NOW</Link>
+                </LinksWrapper>
+
+                <LoginWrapper>
+                    <ProfileIcon />
+                    <Login>Log in</Login>
+                </LoginWrapper>
+            </ItemsWrapper>
+
+            <MenuIcon />
         </Wrapper>
     );
 }
 
 
 export const Wrapper = styled.div`
-  
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 87%;
+
+  @media screen and (max-width: 1024px) {
+    align-items: center;
+    width: 90%;
+  }
 `
 
 export const LogoWrapper = styled.div`
@@ -61,6 +89,56 @@ export const VetService = styled.p`
   color: #A0A0A0;
   font-size: 13px;
   margin-bottom: 4px;
+`
+
+export const ItemsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`
+
+export const LinksWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-right: 40px;
+`
+
+export const Link = styled.p`
+  color: #555555;
+  font-size: 13px;
+  cursor: pointer;
+`
+
+export const LoginWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+export const ProfileIcon = styled(PersonCircle)`
+  width: 26px;
+  height: 26px;
+  color: #EC4A34;
+  margin-right: 15px;
+`
+
+export const Login = styled.p`
+  color: #F56A56;
+  font-size: 14px;
+`
+
+export const MenuIcon = styled(Menu)`
+  display: none;
+  
+  @media screen and (max-width: 1024px) {
+    display: initial;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+  }
 `
 
 export default Navbar;
