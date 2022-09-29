@@ -5,38 +5,38 @@ import { PersonCircle } from '@styled-icons/ionicons-solid/PersonCircle'
 import { Menu } from '@styled-icons/entypo/Menu'
 
 function Navbar() {
-    return (
-        <Wrapper>
-            <LogoWrapper>
-                <FirstRow>
-                    <TheAnimalClinic>THE ANIMAL</TheAnimalClinic>
-                    <PlusIcon />
-                </FirstRow>
-                
-                <SecondRow>
-                    <Clinic>CLINIC</Clinic>
-                    <VetService>VET SERVICE</VetService>
-                </SecondRow>
-            </LogoWrapper>
+  return (
+    <Wrapper>
+      <LogoWrapper>
+        <FirstRow>
+          <TheAnimalClinic>THE ANIMAL</TheAnimalClinic>
+          <PlusIcon />
+        </FirstRow>
 
-            <ItemsWrapper>
-                <LinksWrapper>
-                  <Link>HOME</Link>
-                  <Link>OUR SERVICES</Link>
-                  <Link>ABOUT OUR CLINIC</Link>
-                  <Link>KEEP IN TOUCH</Link>
-                  <Link>BOOK NOW</Link>
-                </LinksWrapper>
+        <SecondRow>
+          <Clinic>CLINIC</Clinic>
+          <VetService>VET SERVICE</VetService>
+        </SecondRow>
+      </LogoWrapper>
 
-                <LoginWrapper>
-                    <ProfileIcon />
-                    <Login>Log in</Login>
-                </LoginWrapper>
-            </ItemsWrapper>
+      <ItemsWrapper>
+        <LinksWrapper>
+          <Link>HOME</Link>
+          <Link>OUR SERVICES</Link>
+          <Link>ABOUT OUR CLINIC</Link>
+          <Link>KEEP IN TOUCH</Link>
+          <Link>BOOK NOW</Link>
+        </LinksWrapper>
 
-            <MenuIcon />
-        </Wrapper>
-    );
+        <LoginWrapper>
+          <ProfileIcon />
+          <Login>Log in</Login>
+        </LoginWrapper>
+      </ItemsWrapper>
+
+      <MenuIcon />
+    </Wrapper>
+  );
 }
 
 
