@@ -5,6 +5,7 @@ import Navbar from '../components/Homepage/Navbar'
 import HelloFriends from '../components/Homepage/HelloFriends'
 import OurServices from '../components/Homepage/OurServices'
 import AboutOurClinic from '../components/Homepage/AboutOurClinic'
+import KeepInTouch from '../components/Homepage/KeepInTouch'
 
 function HomePageCompound() {
   return (
@@ -14,6 +15,7 @@ function HomePageCompound() {
       <HelloFriends />
       <OurServices />
       <AboutOurClinic />
+      <KeepInTouch />
     </Wrapper>
   );
 }
