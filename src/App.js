@@ -1,10 +1,12 @@
 import './App.css';
-import HomePageCompound from './compounds/HomePageCompound'
+// import HomePageCompound from './compounds/HomePageCompound'
+import BookAppointmentPageCompound from './compounds/BookAppointmentPageCompound'
 
 function App() {
   return (
     <div className="App">
-      <HomePageCompound />
+      {/* <HomePageCompound /> */}
+      <BookAppointmentPageCompound />
     </div>
   );
 }
